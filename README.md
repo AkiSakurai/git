@@ -1,5 +1,11 @@
 [![Build status](https://github.com/git/git/workflows/CI/PR/badge.svg)](https://github.com/git/git/actions?query=branch%3Amaster+event%3Apush)
 
+Fork - extra features
+=========================================================
+
+- force --objects-edge-aggressive during packing when environment variable GIT_PACK_AGGRESSIVE is set.
+
+
 Git - fast, scalable, distributed revision control system
 =========================================================
 

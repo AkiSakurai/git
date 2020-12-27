@@ -3610,7 +3610,7 @@ int cmd_pack_objects(int argc, const char **argv, const char *prefix)
 	strvec_push(&rp, "pack-objects");
 	if (thin) {
 		use_internal_rev_list = 1;
-		strvec_push(&rp, shallow
+		strvec_push(&rp, (shallow || getenv("GIT_PACK_AGGRESSIVE"))
 				? "--objects-edge-aggressive"
 				: "--objects-edge");
 	} else
